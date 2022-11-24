@@ -1,0 +1,102 @@
+.app {
+  display: flex;
+  padding: 30px;
+  overflow-x: scroll;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.app-btn_container {
+  position: fixed;
+  right: 20px;
+}
+.button {
+  height: 70px;
+  width: 70px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+.right-btn {
+  transform: rotate(360deg);
+}
+.left-btn {
+  transform: rotate(180deg);
+}
+@media screen and (max-width: 600px) {
+  .app-btn_container {
+    display: none;
+  }
+  .app {
+    padding: 10px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+  .app::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.car {
+  margin-inline: 10px;
+  display: flex;
+}
+
+.car-type {
+  margin: 10px 7px;
+  font-weight: 400;
+}
+
+.car-type__details-main {
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+.car-image {
+  object-fit: contain;
+  width: 300px;
+  height: 350px;
+}
+
+.car-btn__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -15px 0;
+}
+.btn {
+  margin-inline: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+}
+.btn > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  color: #0698c4;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: all 0.4s ease-in-out;
+}
+.btn > span:hover {
+  transform: scale(1.05);
+}
+.btn-image {
+  height: 15px;
+  margin-left: 5px;
+}
+@media screen and (max-width: 600px) {
+  .car-image {
+    object-fit: contain;
+    height: 250px;
+    width: 280px;
+  }
+  .car-btn__container {
+    margin: 0px;
+  }
+  .btn > span {
+    font-size: 14px;
+  }
+}
